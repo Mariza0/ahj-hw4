@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/s2huy2g8qfkk8td1?svg=true)](https://ci.appveyor.com/project/Mariza0/ahj-hw3)
+[![Build status](https://ci.appveyor.com/api/projects/status/mgpnlq56xtrg9vty?svg=true)](https://ci.appveyor.com/project/Mariza0/ahj-hw3)
 
 [Ссылка на Github Pages](https://mariza0.github.io/ahj-hw3/)
 
