@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     goblin.moveGoblin();
     point = game.bumpGoblin();
     count++;
-    let myVariable = `количество попаданий в гоблина: ${point}`;
-    let outputContainer = document.getElementById("output-container");
+    const myVariable = `количество попаданий в гоблина: ${point}`;
+    const outputContainer = document.getElementById('output-container');
     outputContainer.innerHTML = myVariable;
-    
+
     if (point === 5) {
       clearInterval(intervalId); // Останавливаем выполнение setInterval
       alert('Игра завершена. Вы поймали 5 гоблинов.');
