@@ -7,7 +7,6 @@ export default class PlayGround {
   constructor() {
     // Привязываем методы к текущему экземпляру класса
     this.moveGoblin = this.moveGoblin.bind(this);
-    // this.createGoblin = this.createGoblin.bind(this);
   }
 
   moveGoblin() {
