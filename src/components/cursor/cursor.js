@@ -7,7 +7,9 @@ export default class Cursor {
 
   moveMouse(e) {
     const cursor = document.querySelector('.custom-cursor');
-    cursor.style.left = `${e.pageX}px`;
-    cursor.style.top = `${e.pageY}px`;
+    // cursor.style.left = `${e.pageX}px`;
+    // cursor.style.top = `${e.pageY}px`;
+    cursor.style.left = e.pageX - cursor.offsetWidth / 2 + 'px';
+    cursor.style.top = e.pageY - cursor.offsetHeight / 2 + 'px';
   }
 }
