@@ -1,13 +1,14 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
-  target: 'web',
+  devServer: {
+    port: 9000,
+  },
+  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '',
   },
   module: {
     rules: [
@@ -27,14 +28,14 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader, 'css-loader',
         ],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
       },
     ],
   },
@@ -48,9 +49,4 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
   ],
-  optimization: {
-    minimizer: [
-      new CssMinimizerPlugin(),
-    ],
-  },
 };

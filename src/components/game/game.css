@@ -1,9 +1,0 @@
-.custom-cursor {
-    position: fixed;
-    width: 45px;
-    height: 45px;
-    background-image: url('../../img/hammer.png');
-    background-size: cover;
-    pointer-events: none; /* Чтобы курсор не мешал взаимодействию с элементами страницы */
-    z-index: 9999; 
-  }
