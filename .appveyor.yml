@@ -9,15 +9,13 @@ branches:
 cache: node_modules  # кеширование
 
 install:
-  - yarn install  # команда установки зависимостей
+  - yarn
+  - npx puppeteer browsers install
 
 build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
   - yarn run start   # команда сборки
-
-install_browser:
-  - npx puppeteer browsers install
 
 test_script:
   - yarn run lint 
