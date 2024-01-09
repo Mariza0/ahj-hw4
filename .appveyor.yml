@@ -4,7 +4,7 @@ stack: node 16  # окружение
 
 branches:
   only:
-    - master  # ветка git
+    - main  # ветка git
 
 cache: node_modules  # кеширование
 
@@ -18,8 +18,7 @@ build_script:
   - yarn run start   # команда сборки
 
 test_script:
-  - yarn run lint 
-  - yarn run e2e  # скрипт тестирования
+  - yarn run lint && yarn run e2e  # скрипт тестирования
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
