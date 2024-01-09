@@ -16,7 +16,8 @@
     "preshow:doc": "yarn run doc",
     "show:doc": "live-server doc",
     "preshow:dist": "yarn run build",
-    "show:dist": "live-server dist"
+    "show:dist": "live-server dist",
+    "install-browsers": "npx puppeteer browsers install chrome@latest"
   },
   "author": "coursar",
   "license": "MIT",
