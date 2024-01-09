@@ -16,7 +16,7 @@ build: off  # отключаем встроенную в appveyor систему
 build_script:
   - yarn run start   # команда сборки
 
-install:
+install_browser:
   - npx puppeteer browsers install
 
 test_script:
