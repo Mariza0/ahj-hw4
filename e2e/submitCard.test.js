@@ -6,20 +6,11 @@ describe('Check cardNumber through submit', () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: true, // Убедитесь, что это значение true
-      args: ['--no-sandbox', '--disable-setuid-sandbox'], // Добавьте эти аргументы
+      headless: "new",
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
     page = await browser.newPage();
   });
-  // beforeAll(async () => {
-  //   browser = await puppeteer.launch({
-  //     headless: false,
-  //     slowMo: 100,
-  //     devtools: true,
-  //   });
-
-  //   page = await browser.newPage();
-  // });
 
   // ввод валидной карты VISA (номер сгенерирован на общедоступном сервисе https://www.vccgenerator.org/ru/visa-card-generator-result/ )
   test('input valid number', async () => {
