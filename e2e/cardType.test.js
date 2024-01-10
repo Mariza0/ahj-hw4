@@ -6,13 +6,19 @@ describe('Check cardType in input', () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: false,
-      slowMo: 100,
-      devtools: true,
+        headless: true, // Убедитесь, что это значение true
+        args: ['--no-sandbox', '--disable-setuid-sandbox'], // Добавьте эти аргументы
+    });
+    page = await browser.newPage();
     });
 
-    page = await browser.newPage();
-  });
+    //   headless: false,
+    //   slowMo: 100,
+    //   devtools: true,
+    });
+
+    //page = await browser.newPage();
+  // });
 
   // ввод валидной карты
   test('input valid number', async () => {
