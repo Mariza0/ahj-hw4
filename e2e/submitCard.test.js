@@ -6,7 +6,7 @@ describe('Check cardNumber through submit', () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: "new",
+      headless: false,
       slowMo: 100,
       devtools: true,
     });

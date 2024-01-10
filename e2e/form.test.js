@@ -6,7 +6,7 @@ describe('form load', () => {
 
   beforeEach(async () => {
     browser = await puppeteer.launch({
-      headless: "new",
+      headless: false,
       slowMo: 100,
       devtools: true,
     });
