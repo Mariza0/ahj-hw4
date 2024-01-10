@@ -15,7 +15,7 @@ install:
 build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
-  - yarn run start   # команда сборки
+  - yarn run build   # команда сборки
   - sleep 10 
 
 test_script:
