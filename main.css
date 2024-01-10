@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Luhn-status {
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 80px;
+}
+
+.status-luhn.active::after {
+  content: "\2713";
+  color: green;
+}
+
+.status-luhn::before {
+  color: rgb(255, 255, 255);
+}
+
+.status-luhn-negative::before {
+  color: white;
+}
+
+.status-luhn-negative.active::after {
+  content: "\274C"; 
+  color: red;
+}
+
+
+.form-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+}
+
+.card-size {
+  width: 39px;
+  height: 25px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Стили при фокусировке на инпуте */
+input:focus {
+  border-color: #69acf3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  outline: none; /* Убираем стандартное выделение при фокусировке */
+}
+
+button {
+  padding: 10px; /* Установите желаемый вами размер отступов */
+  font-size: 14px; /* Установите желаемый вами размер шрифта */
+  margin: 5px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(60, 188, 60);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(33, 125, 33);
+}
+
+.table {
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  margin-top: 30px;
+}
+
+table {
+  display: table;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-radius: 5px;
+  border-color: rgb(255, 255, 255);
+}
+
+thead {
+  border: none;
+  margin: 2px;
+}
+
+td {
+  border: none;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #d6d6d6de;
+}
+
+.disabled {
+  opacity: 0.1;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 5px;
+}
+
+/*# sourceMappingURL=main.css.map*/
