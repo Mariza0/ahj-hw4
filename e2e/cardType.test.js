@@ -15,7 +15,7 @@ describe('Check cardType in input', () => {
     //   headless: false,
     //   slowMo: 100,
     //   devtools: true,
-    });
+    // });
 
     //page = await browser.newPage();
   // });
