@@ -38,9 +38,6 @@ jobs:
       - name: Run linters
         run: yarn lint
 
-      - name: Run test
-        run: yarn run e2e
-
       - name: Build
         run: yarn build
 

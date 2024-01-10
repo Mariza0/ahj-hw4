@@ -6,7 +6,7 @@ describe('Check cardType in input', () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-      headless: "new", 
+      headless: 'new',
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
     page = await browser.newPage();
