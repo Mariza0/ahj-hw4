@@ -10,7 +10,7 @@ cache: node_modules  # кеширование
 
 install:
   - yarn
-  - npx puppeteer browsers install chrome@latest
+  - npx puppeteer browsers install chrome@119.0.6045.105
 
 build: off  # отключаем встроенную в appveyor систему сборки
 
