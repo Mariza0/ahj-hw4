@@ -22,7 +22,7 @@ test_script:
   - echo "Running lint..."
   - yarn run lint
   - echo "Running E2E tests..."
-  - yarn run e2e
+  - xvfb-run -a yarn run e2e
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
