@@ -22,7 +22,9 @@ test_script:
   - echo "Running lint..."
   - yarn run lint
   - echo "Running E2E tests..."
-  - xvfb-run -a yarn run e2e
+  - yarn run start &  # Запускаем веб-сервер в фоновом режиме
+  - sleep 10  # Ждем несколько секунд, чтобы веб-сервер успел стартовать
+  - yarn run e2e
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
