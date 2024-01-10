@@ -6,11 +6,11 @@ describe('form load', () => {
 
   beforeAll(async () => {
     browser = await puppeteer.launch({
-        headless: true, // Убедитесь, что это значение true
-        args: ['--no-sandbox', '--disable-setuid-sandbox'], // Добавьте эти аргументы
+      headless: true, // Убедитесь, что это значение true
+      args: ['--no-sandbox', '--disable-setuid-sandbox'], // Добавьте эти аргументы
     });
     page = await browser.newPage();
-    });
+  });
   // beforeEach(async () => {
   //   browser = await puppeteer.launch({
   //     headless: false,
